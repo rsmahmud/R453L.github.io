@@ -44,8 +44,10 @@ Description: Portfolio/CV/Resume HTML Template
 html {
   margin: 0 !important;
   overflow: auto !important;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-
+::-webkit-scrollbar{display: none;}
 body {
   color: #5E5C7F;
   background-color: #F9F9FF;
