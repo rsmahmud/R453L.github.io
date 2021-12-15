@@ -149,14 +149,12 @@ pre {
 }
 
 #avatar{
-  border: 10 px solid white;
+  border: 10px solid white;
   border-radius: 50%;
+  max-width: 300px;
+  max-height: 300px;
 }
 
-#avatar-border{
-  border: 10 px solid white;
-  border-radius: 50%;
-}
 /*=================================================================*/
 /*                      HEADER                              
 /*=================================================================*/
