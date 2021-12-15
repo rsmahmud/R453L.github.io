@@ -533,6 +533,11 @@ ul.social-intro li a:hover i {
 
 
 @media (max-width: 576px) {
+  #ctobtns{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   #btnresume{
     display: none;
     visibility: hidden;
