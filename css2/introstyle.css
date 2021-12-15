@@ -504,7 +504,7 @@ ul.social-intro li a:hover i {
 @media only screen and (max-width:960px) {
     #home {
       background-size: cover !important;
-      background-position: center center !important;
+      background-position: center top !important;
     }
     .main-text-container{
         max-width: 500px;
@@ -533,7 +533,10 @@ ul.social-intro li a:hover i {
 
 
 @media (max-width: 576px) {
-
+  #btnresume{
+    display: none;
+    visibility: hidden;
+  }
   .preloader-container h1 {
     font-size: 28px;
   }
