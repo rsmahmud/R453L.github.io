@@ -151,8 +151,8 @@ pre {
 #avatar{
   border: 10px solid white;
   border-radius: 50%;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 /*=================================================================*/
