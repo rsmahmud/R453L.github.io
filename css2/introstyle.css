@@ -1,21 +1,28 @@
-﻿body,
-html {
-  font-size: 100%;
-  padding: 0;
-  margin: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+
+.main-text h1 span,
+ul.social-intro li a{
+  color: #fa5b0f;
 }
 
-*,
-*:after,
-*:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+ul.social-intro li a:hover,
+#progress-line-container,
+.ah-headline.clip .ah-words-wrapper::after,
+.btnhome-secondary:not(:disabled):not(.disabled).active,
+.btnhome-secondary:not(:disabled):not(.disabled):active ,
+.btnhome.btnhome-secondary:before,
+.btnhome{
+  background-color: #fa5b0f;
 }
+
+ul.social-intro li a,
+.btnhome.btnhome-secondary,
+.btnhome.btnhome-secondary:focus{
+  border: 1px solid #fa5b0f;
+}
+
+/* [ GENERAL ] */
+/*================================================== */
+
 
 #home {
   font-family: 'Poppins', sans-serif;
@@ -23,6 +30,10 @@ html {
   background: #fff;
   font-size: 0.9em;
   font-weight: 400;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
 }
 
 .p-none {
@@ -36,6 +47,7 @@ html {
 .mr-20 {
   margin-left: 20px;
 }
+
 
 #home ul {
   padding: 0;
@@ -120,41 +132,68 @@ html {
 }
 
 .uppercase {
-  text-transform: uppercase !important;
+  text-transform: uppercase;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-900 {
+  font-weight: 900;
 }
 
 
-/* BODY dark
+/* BODY darkhome
 ================================================== */
 
-body.dark #main>section,
-body.dark #home .home-content{
+body.darkhome #main>section{
   background: #222;
 }
 
-body.dark .preloader::before,
-body.dark .preloader::after {
+body.darkhome .preloader::before,
+body.darkhome .preloader::after {
   background: #111;
 }
 
-body.dark .main-text h1{
+body.darkhome .main-text h1{
   color: #fff;
 }
 
-body.dark .progress-line {
+
+body.darkhome .progress-line {
   background-color: #fff;
 }
 
-body.dark .preloader-container h1{
+
+body.darkhome .preloader-container h1 {
   color: #fff;
 }
 
-.main-text h3,
-.main-text p{
+
+body.darkhome .main-text h3,
+body.darkhome p,
+body.light.darkhome-header .main-text p{
   color: #eee;
 }
 
+body.darkhome #loader-wrapper .loader-section {
+  background: #333;
+}
 
+@media only screen and (max-width:1024px) {
+  body.darkhome #header {
+    background: #222;
+  }
+}
 
 /* PRELOADER
 ================================================== */
@@ -286,7 +325,7 @@ body.dark .preloader-container h1{
   animation-duration: 2s;
 }
 
-#home:not(.lt-ie10) .not-animated {
+html:not(.lt-ie10) .not-animated {
   opacity: 0;
 }
 
@@ -355,7 +394,6 @@ main#main {
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
 }
-
 
 /* MISCELLANEOUS
 ================================================== */
@@ -533,16 +571,13 @@ ul.social-intro li a:hover i {
 
 
 @media (max-width: 576px) {
-  #ctobtns{
-    display: flex;
-    justify-content: center;
-  }
-  #btnresume{
-    display: none;
-    visibility: hidden;
-  }
+
   .preloader-container h1 {
     font-size: 28px;
+  }
+
+  .container {
+    width: 100%;
   }
 
   .main-text h1 {
