@@ -149,13 +149,13 @@ pre {
 }
 
 #avatar{
-  
+  border: 10 px solid white;
+  border-radius: 50%;
 }
 
 #avatar-border{
+  border: 10 px solid white;
   border-radius: 50%;
-  padding: 15px;
-  background-color: #fff;
 }
 /*=================================================================*/
 /*                      HEADER                              
