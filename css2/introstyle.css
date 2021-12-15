@@ -536,7 +536,6 @@ ul.social-intro li a:hover i {
   #ctobtns{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
   }
   #btnresume{
     display: none;
