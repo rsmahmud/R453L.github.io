@@ -47,7 +47,7 @@ html {
   text-decoration: none;
 }
 
-#home h1,h2,h3,h4,h5,h6 {
+#home> h1,h2,h3,h4,h5,h6 {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
 }
@@ -120,32 +120,32 @@ html {
 }
 
 .uppercase {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 
-/* BODY darkhome
+/* BODY dark
 ================================================== */
 
-body.darkhome #main>section,
-body.darkhome #home .home-content{
+body.dark #main>section,
+body.dark #home .home-content{
   background: #222;
 }
 
-body.darkhome .preloader::before,
-body.darkhome .preloader::after {
+body.dark .preloader::before,
+body.dark .preloader::after {
   background: #111;
 }
 
-body.darkhome .main-text h1{
+body.dark .main-text h1{
   color: #fff;
 }
 
-body.darkhome .progress-line {
+body.dark .progress-line {
   background-color: #fff;
 }
 
-body.darkhome .preloader-container h1{
+body.dark .preloader-container h1{
   color: #fff;
 }
 
@@ -543,10 +543,6 @@ ul.social-intro li a:hover i {
   }
   .preloader-container h1 {
     font-size: 28px;
-  }
-
-  .container {
-    width: 100%;
   }
 
   .main-text h1 {
