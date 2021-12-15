@@ -1,0 +1,29 @@
+/* =================================================================== */
+/* ORANGE #fa5b0f
+====================================================================== */
+.btnhome.btnhome-secondary,
+.main-text h1 span,
+ul.social-intro li a{
+	color: #fa5b0f;
+}
+
+ul.social-intro li a:hover,
+#progress-line-container,
+.ah-headline.clip .ah-words-wrapper::after,
+.btnhome-secondary:not(:disabled):not(.disabled).active,
+.btnhome-secondary:not(:disabled):not(.disabled):active ,
+.btnhome.btnhome-secondary:before,
+.btnhome{
+	background-color: #fa5b0f;
+}
+
+ul.social-intro li a,
+.btnhome.btnhome-secondary,
+.btnhome.btnhome-secondary:focus{
+	border: 1px solid #fa5b0f;
+}
+
+.btnhome-secondary:not(:disabled):not(.disabled).active,
+.btnhome-secondary:not(:disabled):not(.disabled):active {
+	border-color:#fa5b0f;
+}
