@@ -124,28 +124,28 @@ html {
 }
 
 
-/* BODY DARK
+/* BODY darkhome
 ================================================== */
 
-body.dark #main>section,
-body.dark #home .home-content{
+body.darkhome #main>section,
+body.darkhome #home .home-content{
   background: #222;
 }
 
-body.dark .preloader::before,
-body.dark .preloader::after {
+body.darkhome .preloader::before,
+body.darkhome .preloader::after {
   background: #111;
 }
 
-body.dark .main-text h1{
+body.darkhome .main-text h1{
   color: #fff;
 }
 
-body.dark .progress-line {
+body.darkhome .progress-line {
   background-color: #fff;
 }
 
-body.dark .preloader-container h1{
+body.darkhome .preloader-container h1{
   color: #fff;
 }
 
