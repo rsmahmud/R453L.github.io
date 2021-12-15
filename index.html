@@ -7,6 +7,9 @@
 	<meta name="description" content="Rasel Mahmud - Portfolio Website">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
@@ -25,44 +28,103 @@
 </head>
 
 <body class="dark">
+	<div class="page">
+     	    <link type="text/css" media="all" href="css2/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" media="all" href="css2/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" media="all" href="css2/jquery.animatedheadline.css" rel="stylesheet">
+    <link type="text/css" media="all" href="css2/introstyle.css" rel="stylesheet">
+    <link type="text/css" media="all" href="css2/orange.css" rel="stylesheet">
+        <!-- Main Content Starts -->
+        <main id="main">
+            <section id="home" class="active">
+                <!-- Text Rotator Starts -->
+                <div class="main-text-container">
+                    <div class="main-text" id="selector">
+                        <h3>Hi there !</h3>
+                        <h1 class="ah-headline">
+					I'm
+						<span class="ah-words-wrapper">
+							<b class="is-visible">Rasel Mahmud</b>
+                            <b>a wizard</b>
+                            <b>an engineer</b>
+                            <b>a programmer</b>
+                            <b>a writer</b>
+							<b>a developer</b>
+							<b>a blogger</b>
+							<b>a freelancer</b>
 
-<!-- Preloader -->
-<div id="preloader">
-	<div class="outer">
-		<!-- Google Chrome -->
-		<div class="infinityChrome">
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
+						</span>
+					</h1>
+                        <p>I'm a Freelance Designer and Developer based in Dhaka, Bangladesh. I strive to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
+                        <div class="call-to-actions-home">
+                            <div class="text-left">
+                                <a href="#about" class="btnhome"><span><i class="fa fa-user"></i>more about me</span></a>
+                                <a href="#resume" class="btnhome btnhome-secondary"><span><i class="fa fa-file-pdf-o"></i>CV/Resume</span></a>
+                            </div>
+                        </div>
+                        <!-- Social Media Profiles Starts -->
 
-		<!-- Safari and others -->
-		<div class="infinity">
-			<div>
-				<span></span>
-			</div>
-			<div>
-				<span></span>
-			</div>
-			<div>
-				<span></span>
-			</div>
-		</div>
-		<!-- Stuff -->
-		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo-outer">
-			<defs>
-				<filter id="goo">
-					<feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
-					<feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-					<feBlend in="SourceGraphic" in2="goo" />
-				</filter>
-			</defs>
-		</svg>
-	</div>
-</div>
+                                <div class="contact-container social">
+                                    <h6 class="font-weight-600 uppercase"></h6>
+                                    <ul class="list-inline social social-intro text-center p-none">
+                                        <li class="facebook"><a title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li class="twitter"><a title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li class="youtube"><a title="Youtube" href="#"><i class="fa fa-youtube"></i></a>
+                                        </li>
+                                        <li class="dribbble"><a title="Dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Social Media Profiles Ends -->
+                    </div>
 
+                </div>
+                <!-- Text Rotator Ends -->
+            </section>
+        </main>
+    </div>
+    <!-- Main Content Ends -->
+    <!-- Preloader Starts -->
+    <div class="preloader">
+        <div class="preloader-container">
+            <h1>Rasel</h1>
+            <div id="progress-line-container">
+                <div class="progress-line"></div>
+            </div>
+            <h1>Mahmud</h1>
+        </div>
+    </div>
+    <!-- Preloader Ends -->
+
+    <!-- Template JS Files -->
+    <script src="js2/jquery-2.2.4.min.js"></script>
+    
+    
+    <script src="js2/jquery.animatedheadline.js"></script>
+    <script src="js2/bootstrap.min.js"></script>
+    <script src="js2/transition.js"></script>
+    <script src="js2/custom.js"></script>
+    <script type="text/javascript">
+        $(window).on('load', function(){
+            var imglist = [
+                "url('img/bg1.jpg')",
+                "url('img/bg2.jpg')",
+                "url('img/bg3.jpg')",
+                "url('img/bg4.jpg')",
+                "url('img/bg5.png')"
+            ];
+
+            var random = Math.floor(Math.random() * imglist.length);
+            console.log(imglist[random]);
+            document.getElementById("home").style.setProperty("background-image", imglist[random], "important");
+        
+        });
+        
+    </script>
 <!-- desktop header -->
-<header class="desktop-header-3 fixed-top">
+<header class="desktop-header-3 fixed-top" style="position:sticky;">
 
     <div class="container">
 	
